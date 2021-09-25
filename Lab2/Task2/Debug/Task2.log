@@ -1,0 +1,4 @@
+﻿  Main.c
+C:\Users\ttopa\source\repos\lpnu_c\Lab2\Task2\Main.c(11,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ttopa\source\repos\lpnu_c\Lab2\Task2\Main.c(43,43): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Task2.vcxproj -> C:\Users\ttopa\source\repos\lpnu_c\Lab2\Debug\Task2.exe
