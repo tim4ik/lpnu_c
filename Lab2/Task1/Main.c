@@ -1,22 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool isCorrect(int iDecimal)
-{
-	int iPlace=1;
-	bool bAnswer = 1;
-	while (iDecimal)
-	{
-		if (iPlace % 2 && iDecimal % 2)
-		{
-			bAnswer = 0;
-		}
-		iPlace++;
-		iDecimal /= 2;
-	}
-	return bAnswer;
-}
-
 int main(void)
 {
 	int iNumber = 0;
