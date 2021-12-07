@@ -1,0 +1,8 @@
+﻿  Main.c
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task1\Main.c(17,37): warning C4101: 'tmp': unreferenced local variable
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task1\Main.c(71,12): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task1\Main.c(107,21): warning C4047: 'function': 'int *(__cdecl *)(int *,long,long)' differs in levels of indirection from 'void (__cdecl *)(int *,long,long)'
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task1\Main.c(107,14): warning C4024: 'testSorting': different types for formal and actual parameter 1
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task1\Main.c(107,34): warning C4047: 'function': 'int *(__cdecl *)(int *,long,long)' differs in levels of indirection from 'void (__cdecl *)(int *,long,long)'
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task1\Main.c(107,23): warning C4024: 'testSorting': different types for formal and actual parameter 2
+  Task1.vcxproj -> C:\Users\ttopa\source\repos\lpnu_c\Lab7\x64\Debug\Task1.exe

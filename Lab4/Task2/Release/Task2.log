@@ -1,0 +1,12 @@
+﻿  Main.c
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(11,7): warning C4013: 'exit' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(22,6): warning C4013: 'gets' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(32,30): warning C4013: 'malloc' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(44,63): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(18,1): warning C4244: 'initializing': conversion from 'double' to 'const float', possible loss of data
+  Generating code
+  1 of 7 functions (14.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Task2.vcxproj -> C:\Users\ttopa\source\repos\lpnu_c\Lab4\Release\Task2.exe

@@ -1,0 +1,10 @@
+Mon Oct 18 13:29:37 2021
+ Program started.
+Mon Oct 18 13:29:40 2021
+ Parameters file input.bin opened. X = 3.000000, Z = 5.000000.
+Mon Oct 18 13:29:40 2021
+ Expression calculated. Result = 4.127638.
+Mon Oct 18 13:29:43 2021
+ Output file result.txt saved.
+Mon Oct 18 13:29:43 2021
+ Program ended.

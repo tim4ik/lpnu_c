@@ -1,0 +1,4 @@
+﻿  Main.c
+C:\Users\ttopa\source\repos\lpnu_c\Lab8\Task1\Main.c(55,19): warning C4013: 'strtol' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab8\Task1\Main.c(91,14): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
+  Task1.vcxproj -> C:\Users\ttopa\source\repos\lpnu_c\Lab8\x64\Debug\Task1.exe

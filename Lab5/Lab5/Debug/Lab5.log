@@ -1,0 +1,4 @@
+﻿  Main.c
+C:\Users\ttopa\source\repos\lpnu_c\Lab5\Lab5\Main.c(14,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\ttopa\source\repos\lpnu_c\Lab5\Lab5\Main.c(20,1): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Lab5.vcxproj -> C:\Users\ttopa\source\repos\lpnu_c\Lab5\Debug\Lab5.exe

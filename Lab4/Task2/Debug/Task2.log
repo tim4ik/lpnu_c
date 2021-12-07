@@ -1,0 +1,11 @@
+﻿  Main.c
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(11,7): warning C4013: 'exit' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(17,14): warning C4013: 'strcat' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(17,47): warning C4047: 'function': 'const char *' differs in levels of indirection from 'int'
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(17,14): warning C4024: 'fputs': different types for formal and actual parameter 1
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(18,34): warning C4013: 'exp' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(22,6): warning C4013: 'gets' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(30,17): warning C4013: 'atan' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(30,27): warning C4013: 'pow' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab4\Task2\Main.c(18,1): warning C4244: 'initializing': conversion from 'int' to 'const float', possible loss of data
+  Task2.vcxproj -> C:\Users\ttopa\source\repos\lpnu_c\Lab4\Debug\Task2.exe

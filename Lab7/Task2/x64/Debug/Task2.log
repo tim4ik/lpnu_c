@@ -1,0 +1,7 @@
+﻿  Main.c
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task2\Main.c(21,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task2\Main.c(36,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task2\Main.c(52,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task2\Main.c(87,71): warning C4013: 'malloc' undefined; assuming extern returning int
+C:\Users\ttopa\source\repos\lpnu_c\Lab7\Task2\Main.c(87,112): warning C4312: 'type cast': conversion from 'int' to 'double (__cdecl **)(double,double)' of greater size
+  Task2.vcxproj -> C:\Users\ttopa\source\repos\lpnu_c\Lab7\x64\Debug\Task2.exe
