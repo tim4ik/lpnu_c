@@ -1,42 +1,97 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #define EXAM_QUANTITY 5
+
+typedef struct Date
+{
+	int day;
+	int month;
+	int year;
+} Date;
 
 typedef struct Student
 {
 	char name[20];
 	char surname[20];
 	int exams[EXAM_QUANTITY];
+	Date birthdate;
 	struct Student* next;
 } Student;
 
+
+Date stringToDate(char str[])
+{
+	Date date;
+	char* day = strtok(str, ".");
+	date.day = strtol(day, NULL, 10);
+	char* month = strtok(NULL, ".");
+	date.month = strtol(month, NULL, 10);
+	char* year = strtok(NULL, ".");
+	date.year = strtol(year, NULL, 10);
+	return date;
+}
+
+Student* stringToStudent(char* str)
+{
+	Student* st = (Student*)malloc(sizeof(Student));
+	char* surname = strtok(str, ", ");
+	strcpy(st->surname, surname);
+	char* name = strtok(NULL, ", ");
+	strcpy(st->name, name);
+	char* date = strtok(NULL, ", ");
+	char* grade = strtok(NULL, ", ");
+	int cnt = 0;
+	while (grade != NULL)
+	{
+		st->exams[cnt] = strtol(grade, NULL, 10);
+		cnt++;
+		grade = strtok(NULL, ", ");
+	}
+	st->birthdate = stringToDate(date);
+	st->next = NULL;
+	return st;
+}
+
+Student* readFromFile(char filename[])
+{
+	Student* pFirst=(Student*)malloc(sizeof(Student));
+	FILE* fp;
+	char str[256];
+	int cnt = 0;
+	if ((fp = fopen(filename, "r")) == NULL)
+	{
+		perror("Error occured while opening file");
+		return NULL;
+	}
+	if (fgets(str, 256, fp) != NULL)
+	{
+		printf("%s\n", str);
+		pFirst = stringToStudent(str);
+		cnt++;
+	}
+	Student* pStudent = pFirst;
+	while (fgets(str, 256, fp) != NULL)
+	{
+		printf("%s\n", str);
+		Student* test = stringToStudent(str);
+		pStudent->next = test;
+		pStudent = test;
+		cnt++;
+	}
+	fclose(fp);
+	return pFirst;
+}
+
 int main(void)
 {
-	int n;
-	printf("Number of students? ");
-	scanf_s("%i", &n);
-	Student* pStudent = (Student*)malloc(sizeof(Student));
-	Student* pFirst = pStudent;
-	for (int i = 0; i < n; i++)
+	Student* pFirst = readFromFile("students.txt");
+	Student* pStudent = pFirst;
+	while (pStudent != NULL)
 	{
-		printf("Name? ");
-		char testname[20]=scanf_s("%s".)
-		scanf_s("%s", &pStudent->name);
-		printf("Surname? ");
-		scanf_s("%s", &pStudent->surname);
-		for (int j = 0; j < EXAM_QUANTITY; j++)
-		{
-			printf("Exam %i? ", j);
-			scanf_s("%i", &pStudent->exams[i]);
-		}
-		Student* pNext = (Student*)malloc(sizeof(Student));
-		pStudent->next = pNext;
-		pStudent = pNext;
-	}
-	pStudent->next = NULL;
-	Student* pRead = pFirst;
-	while (pRead != NULL)
-	{
-		printf("%s\n", pRead->name);
-		pRead = pRead->next;
-	}
+		if (pStudent->exams[0] == 3 && pStudent->exams[2] == 3)
+			printf("%s %s\n", pStudent->name, pStudent->surname);
+		pStudent = pStudent->next;
+	}	
 }
